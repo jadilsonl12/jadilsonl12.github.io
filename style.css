@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url('imagens/64a18796916c91db8679091309aa6b8b\ \(1\).jpg');
+    background-size: cover;
+    margin: 0px;
+}
+
+nav {
+    overflow: hidden;
+    box-shadow: 0px 16px 15px -11px #000000;
+    background-color: rgba(33, 33, 33, 0.98);
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    font-weight: 700;
+}
+
+li a:hover {
+    color: #cacacab9;
+}
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.pesquisa__titulo {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.pesquisa__input {
+
+    align-self: center;
+}
+
+.pesquisa__input input {
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.pesquisa__input i {
+    color: white;
+    font-size: x-large;
+}
+
+.input-icon {
+    position: relative;
+    color: black;
+    right: 0;
+    top: 22px;
+    left: calc(100% - 30px)
+}
+
+.card {
+    width: 200px;
+}
+
+.card:hover {
+    color: #b3b1af;
+    cursor: pointer;
+}
+
+.card__imagem {
+    width: 200px;
+    height: 300px;
+}
+
+.card__titulo {
+    margin-top: 3px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.card__classificacao {
+    text-align: center;
+}
+
+.filmes {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #070400a6;
+}
+
+.footer {
+    display: block;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+    text-align: center;
+    color: white;
+    font-size: large;
+
+}
+
+.footer:hover {
+    cursor: pointer;
+    color: #b3b1af;
+}
