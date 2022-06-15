@@ -6,22 +6,23 @@ body {
     margin: 0px;
 }
 
-nav {
-    overflow: hidden;
+.navbar__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     box-shadow: 0px 16px 15px -11px #000000;
     background-color: rgba(33, 33, 33, 0.98);
-}
-
-
-ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    gap: 40px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding-left: 0px;
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
 }
+
+.navbar__cadastro {
+    margin-left: auto;
+}
+
 
 li {
     float: left;
@@ -86,8 +87,11 @@ li a:hover {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     width: 200px;
 }
+
 
 .card:hover {
     color: #b3b1af;
@@ -119,7 +123,7 @@ li a:hover {
 }
 
 .footer {
-    display: block;
+    display: flex;
     background-color: black;
     position: fixed;
     width: 100%;
@@ -128,10 +132,32 @@ li a:hover {
     text-align: center;
     color: white;
     font-size: large;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
-.footer:hover {
+.link:hover {
     cursor: pointer;
     color: #b3b1af;
+}
+
+@media (max-width: 714px) {
+    li a {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100px;
+    }
+
+    .card__imagem {
+        width: 100px;
+        height: 150px;
+    }
+
+    .pesquisa__input input {
+        width: 150px;
+        height: 30px;
+    }
 }

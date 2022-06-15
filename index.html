@@ -9,15 +9,14 @@
 </head>
 
 <body>
-    <nav>
-        <div class="navbar container">
-            <ul class="navbar__menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Gêneros</a></li>
-                <li><a href="#">Lançamentos</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Gêneros</a></li>
+            <li><a href="#">Lançamentos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li class="navbar__cadastro"><a href="#">Cadastrar-se</a></li>
+        </ul>
     </nav>
     <div class="container">
         <div class="pesquisa">
@@ -26,7 +25,6 @@
             </h2>
 
             <div class="form-input pesquisa__input">
-                <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
                 <input type="text" placeholder="Pesquisa">
             </div>
         </div>
@@ -34,6 +32,7 @@
             <div class="card">
                 <img class="card__imagem" alt="Filme do Vingadores"
                     src="https://br.web.img2.acsta.net/medias/nmedia/18/89/43/82/20052140.jpg">
+
                 <div class="card__titulo">Vingadores</div>
                 <div class="card__classificacao">
                     ★★★★★
@@ -143,8 +142,14 @@
             </div>
 
             <div class="footer">
-                Suporte
+                <div class="link">
+                    Suporte
+                </div>
+                <div class="link">
+                    Contato
+                </div>
             </div>
+
         </div>
     </div>
 
