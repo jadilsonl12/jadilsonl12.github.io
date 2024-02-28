@@ -1,61 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <title>Teste ITW</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <script type="module" src="./js/index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Jadilson Lucio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- Dev Icon Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <!-- CSS do Projeto -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
-
 <body>
-    <nav class="navbar">
-        <ul class="navbar__menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="lancamentos.html">Lançamentos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li class="navbar__cadastro"><a href="cadastro.html">Cadastrar-se</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="pesquisa">
-            <h2 class="pesquisa__titulo" id="titulo">
-                Próximos Filmes
-            </h2>
-
-            <div class="form-input pesquisa__input">
-                <input type="text" id="inputBusca" placeholder="Pesquisa">
-            </div>
+  <main id="container">
+    <aside id="bio-container">
+      <h2>Jadilson Lucio</h2>
+      <img id="bio-image" src="img/profile.png" alt="Jadilson Lucio">
+      <p>Olá, meu nome é Jadilson Lucio e sou <span class="highlight">Desenvolvedor Front-end</span>.</p>
+      <p id="welcome-text">Seja bem-vindo!</p>
+      <ul id="social-container">
+        <li><a href="https://www.facebook.com/jadilson.luciodossantos/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/jadilson-lucio-17432723a/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/jadilson_lucio/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
+    </aside>
+    <section id="about-container">
+      <h1 id="name">Jadilson Lucio</h1>
+      <p id="title"><span class="highlight">Desenvolvedor Front-end</span></p>
+      <p class="description">Sou um desenvolvedor especializado em páginas web (front-end), já criei algumas páginas web e fiz manutenções em outras, gosto bastante de aprender novas ferramentas e obter novos conhecimentos, por isso costumo pesquisar bastante coisas relacionadas a tecnologia, para entender bem como tudo funciona.
+      </p>
+      <p class="description">Atuo principalmente no <span class="highlight">front-end</span>, mas já participei de alguns projetos realizando tarefas do <span class="highlight">back-end</span>, sempre tento me aperfeiçoar na área. Então caso eu não conheça uma tecnologia específica ou nunca tenha trabalhado, procuro sempre sobre ela e aprender como utilizá-la.</p>
+      <a href="https://github.com/jadilsonl12" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon> <span>Ver Projetos</span></a>
+      <h2 id="skills-section-title">Minhas Skills</h2>
+      <p class="description">Conheça as tecnologias que domino:</p>
+      <div id="skills-container">
+        <div class="skills-box">
+          <p class="skills-title">Front-end</p>
+          <i class="devicon-html5-plain colored"></i>
+          <i class="devicon-css3-plain colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
         </div>
-        <div class="filmes" id="filmes">
-            <div class="filme">
-                <img class="filme__imagem" alt="Filme do Vingadores"
-                    src="https://br.web.img2.acsta.net/medias/nmedia/18/89/43/82/20052140.jpg">
-
-                <div class="filme__titulo">Vingadores</div>
-                <div class="filme__classificacao">
-                    ★★★★★
-                </div>
-
-            </div>
-
-
-            <div onclick="funcao()" class="footer">
-                <div class="link">
-                    Suporte
-                </div>
-                <div class="link">
-                    Contato
-                </div>
-            </div>
-
+        <div class="skills-box">
+          <p class="skills-title">Back-end</p>
+          <i class="devicon-java-plain colored"></i>
+          <i class="devicon-nodejs-plain colored"></i>
+          <i class="devicon-python-plain colored"></i>
         </div>
-    </div>
-
-
+        <div class="skills-box">
+          <p class="skills-title">Databases</p>
+          <i class="devicon-mysql-plain colored"></i>
+          <i class="devicon-postgresql-plain colored"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Front-end Frameworks</p>
+          <i class="devicon-quasar-plain-wordmark colored"></i>
+          <i class="devicon-vuejs-plain colored"></i>
+          <i class="devicon-tailwindcss-original colored"></i>
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Back-end Frameworks</p>
+          <i class="devicon-django-plain"></i>
+          <i class="devicon-djangorest-plain"></i>
+        
+        </div>
+        <div class="skills-box">
+          <p class="skills-title">Tools</p>
+          <i class="devicon-linux-plain"></i>
+          <i class="devicon-windows11-original"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Ion Icons -->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
-
 </html>
